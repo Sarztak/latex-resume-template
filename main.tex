@@ -1,0 +1,121 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+% Define colors
+\definecolor{headercolor}{RGB}{0,51,102}
+\definecolor{sectioncolor}{RGB}{0,51,102}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Configure section titles
+\titleformat{\section}
+{\color{sectioncolor}\normalsize\bfseries\uppercase}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+% Configure itemize - compact spacing
+\setlist[itemize]{leftmargin=*,label=\textbullet,itemsep=0pt,parsep=0pt,topsep=2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries\color{headercolor} SARTHAK SUNIL DHANKE}\\[4pt]
+    773.487.2474 \textbar\ \href{mailto:sarthakdhanke@uchicago.edu}{sarthakdhanke@uchicago.edu} \textbar\ \href{https://linkedin.com}{LinkedIn} \textbar\ \href{https://github.com}{GitHub}
+\end{center}
+
+\vspace{-6pt}
+
+% Summary
+\small
+Data Scientist with experience in deep learning (CV, GNNs, NLP), LLM agents, and classical ML. Skilled in PyTorch, TensorFlow, model debugging, and data-centric development. Focused on calibration, feature design, and deploying models that align with real-world decision contexts and safety constraints.
+
+\vspace{2pt}
+
+% Education
+\section*{Education}
+
+\textbf{The University of Chicago} -- M.S. in Applied Data Science \hfill \textit{Expected Dec 2025 \textbar\ GPA: 4.0}\\
+\textit{Coursework:} Computer Vision, Machine Learning, Bayesian ML with GenAI, AI Safety Fundamentals, MLOps
+
+\vspace{2pt}
+
+\textbf{IIT (BHU) Varanasi} -- B.Tech in Electronics Engineering \hfill \textit{Jul 2017 -- May 2021 \textbar\ GPA: 3.7}\\
+\textit{Publication:} ``Index Modulation Multiple Access via Deep Learning Detection,'' IEEE 5GWF 2020
+
+% Experience
+\section*{Experience}
+
+\textbf{DV \& Automation Engineer} \textbar\ \textit{Texas Instruments} \hfill \textit{Jun 2021 -- Jun 2023}
+\begin{itemize}
+    \item \textbf{TPS3813:} Reduced time-to-market by 3 months through scalable test automation solution
+    \item \textbf{REF35:} Optimized voltage reference parameters using ML, reducing test effort by 2 weeks
+    \item \textbf{TPS3808E:} Reduced simulation processing from 1 week to 30 minutes with Python automation
+    \item \textbf{TPS3436:} Built end-to-end test suite in VBA and Python, cutting test time by 90\%
+\end{itemize}
+
+\textbf{Researcher -- AI Agent Developer}
+\begin{itemize}
+    \item Engineering agentic workflow to automate market lead scrubbing at a top U.S. wealth management firm
+\end{itemize}
+
+\textbf{Research Assistant -- Cultural Analytics} \textbar\ \textit{UChicago Faculty Led Research}
+\begin{itemize}
+    \item Analyzing sentiments in Taylor Swift's lyrics, tours, and media to study symbolic meaning in pop music
+\end{itemize}
+
+\textbf{Teaching Assistant -- Computing for the Social Sciences} \textbar\ \textit{UChicago}
+\begin{itemize}
+    \item Taught coding, Git, and DataViz via focused assignments and feedback to prepare students for research
+\end{itemize}
+
+\textbf{Research Assistant -- Film Development} \textbar\ \textit{STAGE Lab, UChicago}
+\begin{itemize}
+    \item Used OpenAI Whisper to translate and polish Marathi transcripts for research-driven film storytelling
+\end{itemize}
+
+\textbf{Research Assistant -- Public Health} \textbar\ \textit{BREATH Lab, UChicago Medicine}
+\begin{itemize}
+    \item Built ethics-aligned study website using HTML/CSS and JavaScript; supported unbiased data collection
+\end{itemize}
+
+% Projects
+\section*{Projects}
+
+\begin{itemize}
+    \item \textbf{Robotics:} Prototyping prompt-driven agentic system for drone swarm choreography
+    \item \textbf{Aviation:} Built multi-agent system for real-time crew disruption recovery using LangChain+RAG
+    \item \textbf{Digital Media:} Achieved 90\% accuracy on UCF-101 using optimized CNN-LSTM architecture
+    \item \textbf{Healthcare:} Built calibrated XGBoost model for readmission classification; \$200K projected savings
+    \item \textbf{Transport:} Improved accident risk prediction using Random Forests; enabled \$5.25M targeted savings
+    \item \textbf{Big Data \& Cloud:} Processed 1.5M GitHub commits with PySpark; revealed contributor trends
+    \item \textbf{Medical Imaging:} Built Bayesian model for X-rays; improved robustness against adversarial attacks
+    \item \textbf{Energy:} Forecasted EV charging demand with seasonal and intervention-aware time series modeling
+    \item \textbf{Recommender Systems:} Modeled user-place links via GNN; extracted patterns from Yelp graph data
+\end{itemize}
+
+% Skills
+\section*{Skills}
+
+\textbf{Languages \& Tools:} Python, R, SQL, HTML/CSS, JavaScript, Tableau, Git, Linux, Streamlit\\
+\textbf{Libraries:} Scikit-learn, PyTorch, TensorFlow, XGBoost, Matplotlib, Seaborn, LangChain\\
+\textbf{Data Engineering \& MLOps:} Airflow, Docker, Spark, GCP, MLFlow, H2O, Differential Privacy
+
+\end{document}
